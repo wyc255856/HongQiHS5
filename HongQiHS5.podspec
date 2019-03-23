@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "HongQiHS5"
-  s.version      = "1.0.0"
+  s.version      = "1.0.1"
   s.summary      = "A short description of HongQiHS5SDK."
 
   s.description  = <<-DESC
@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
 
   s.homepage     = "http://EXAMPLE/HongQiHS5"
 
-  s.license      = "Copyright (c) 2018年 HongQiHS5SDK. All rights reserved."
+  s.license      = "Copyright (c) 2019年 HongQiHS5SDK. All rights reserved."
 
   s.author             = { "张三" => "zhangsan0103@gmail.com" }
 
