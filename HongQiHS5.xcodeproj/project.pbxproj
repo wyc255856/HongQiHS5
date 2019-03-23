@@ -1,0 +1,614 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		53B6021820FF3DDF000DAC14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53B601B920FF3DDE000DAC14 /* Assets.xcassets */; };
+		53B6021920FF3DDF000DAC14 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53B601BA20FF3DDE000DAC14 /* ViewController.m */; };
+		53B6021B20FF3DDF000DAC14 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53B601BD20FF3DDE000DAC14 /* Main.storyboard */; };
+		53B6021C20FF3DDF000DAC14 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 53B601BF20FF3DDE000DAC14 /* main.m */; };
+		53B6021D20FF3DDF000DAC14 /* hs5_aeskey.c in Sources */ = {isa = PBXBuildFile; fileRef = 53B601C320FF3DDE000DAC14 /* hs5_aeskey.c */; };
+		53B6021E20FF3DDF000DAC14 /* hs5_hmac.c in Sources */ = {isa = PBXBuildFile; fileRef = 53B601C420FF3DDE000DAC14 /* hs5_hmac.c */; };
+		53B6021F20FF3DDF000DAC14 /* HS5CAR_AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 53B601C520FF3DDE000DAC14 /* HS5CAR_AFHTTPSessionManager.m */; };
+		53B6022020FF3DDF000DAC14 /* HS5JKWKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53B601C620FF3DDE000DAC14 /* HS5JKWKWebViewController.m */; };
+		53B6022120FF3DDF000DAC14 /* JKEventHandler+HS5Car.m in Sources */ = {isa = PBXBuildFile; fileRef = 53B601CD20FF3DDE000DAC14 /* JKEventHandler+HS5Car.m */; };
+		53B6022220FF3DDF000DAC14 /* hs5_unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = 53B601CF20FF3DDE000DAC14 /* hs5_unzip.c */; };
+		53B6022320FF3DDF000DAC14 /* HS5CAR_AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 53B601D020FF3DDE000DAC14 /* HS5CAR_AFURLResponseSerialization.m */; };
+		53B6022420FF3DDF000DAC14 /* hs5_aescrypt.c in Sources */ = {isa = PBXBuildFile; fileRef = 53B601D220FF3DDE000DAC14 /* hs5_aescrypt.c */; };
+		53B6022520FF3DDF000DAC14 /* hs5_zip.c in Sources */ = {isa = PBXBuildFile; fileRef = 53B601D320FF3DDE000DAC14 /* hs5_zip.c */; };
+		53B6022620FF3DDF000DAC14 /* HS5CAR_AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 53B601D420FF3DDE000DAC14 /* HS5CAR_AFSecurityPolicy.m */; };
+		53B6022720FF3DDF000DAC14 /* HS5CAR_AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 53B601D520FF3DDE000DAC14 /* HS5CAR_AFURLRequestSerialization.m */; };
+		53B6022820FF3DDF000DAC14 /* hs5_fileenc.c in Sources */ = {isa = PBXBuildFile; fileRef = 53B601D820FF3DDE000DAC14 /* hs5_fileenc.c */; };
+		53B6022920FF3DDF000DAC14 /* hs5_ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = 53B601DA20FF3DDE000DAC14 /* hs5_ioapi.c */; };
+		53B6022A20FF3DDF000DAC14 /* UIView+HS5frameAdjust.m in Sources */ = {isa = PBXBuildFile; fileRef = 53B601DD20FF3DDE000DAC14 /* UIView+HS5frameAdjust.m */; };
+		53B6022B20FF3DDF000DAC14 /* hs5_mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = 53B601E020FF3DDE000DAC14 /* hs5_mztools.c */; };
+		53B6022C20FF3DDF000DAC14 /* hs5_sha1.c in Sources */ = {isa = PBXBuildFile; fileRef = 53B601E120FF3DDE000DAC14 /* hs5_sha1.c */; };
+		53B6022D20FF3DDF000DAC14 /* UIView+HS5CARAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 53B601E220FF3DDE000DAC14 /* UIView+HS5CARAdd.m */; };
+		53B6022E20FF3DDF000DAC14 /* HS5CAR_AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 53B601E320FF3DDE000DAC14 /* HS5CAR_AFNetworkReachabilityManager.m */; };
+		53B6022F20FF3DDF000DAC14 /* HS5CAR_AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 53B601E620FF3DDE000DAC14 /* HS5CAR_AFHTTPRequestOperation.m */; };
+		53B6023020FF3DDF000DAC14 /* HS5CAR_AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 53B601E720FF3DDE000DAC14 /* HS5CAR_AFHTTPRequestOperationManager.m */; };
+		53B6023120FF3DDF000DAC14 /* HS5CarResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 53B601E820FF3DDE000DAC14 /* HS5CarResource.bundle */; };
+		53B6023220FF3DDF000DAC14 /* HS5JKEventHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 53B601EC20FF3DDE000DAC14 /* HS5JKEventHandler.m */; };
+		53B6023320FF3DDF000DAC14 /* HS5ChooseCarModelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53B601ED20FF3DDE000DAC14 /* HS5ChooseCarModelViewController.m */; };
+		53B6023420FF3DDF000DAC14 /* HS5CAR_AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 53B601EF20FF3DDE000DAC14 /* HS5CAR_AFURLConnectionOperation.m */; };
+		53B6023520FF3DDF000DAC14 /* hs5_prng.c in Sources */ = {isa = PBXBuildFile; fileRef = 53B601F520FF3DDE000DAC14 /* hs5_prng.c */; };
+		53B6023620FF3DDF000DAC14 /* HS5WelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53B601F620FF3DDE000DAC14 /* HS5WelcomeViewController.m */; };
+		53B6023720FF3DDF000DAC14 /* hs5_pwd2key.c in Sources */ = {isa = PBXBuildFile; fileRef = 53B601FB20FF3DDE000DAC14 /* hs5_pwd2key.c */; };
+		53B6023820FF3DDF000DAC14 /* UIColor+HS5CARUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 53B601FD20FF3DDE000DAC14 /* UIColor+HS5CARUtil.m */; };
+		53B6023920FF3DDF000DAC14 /* HS5CarBundleTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 53B6020120FF3DDE000DAC14 /* HS5CarBundleTool.m */; };
+		53B6023A20FF3DDF000DAC14 /* hs5_aestab.c in Sources */ = {isa = PBXBuildFile; fileRef = 53B6020220FF3DDE000DAC14 /* hs5_aestab.c */; };
+		53B6023C20FF3DDF000DAC14 /* HS5CAR_AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 53B6020820FF3DDE000DAC14 /* HS5CAR_AFURLSessionManager.m */; };
+		53B6023D20FF3DDF000DAC14 /* hs5_entropy.c in Sources */ = {isa = PBXBuildFile; fileRef = 53B6020C20FF3DDE000DAC14 /* hs5_entropy.c */; };
+		53B6023E20FF3DDF000DAC14 /* HS5CAR_SSZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = 53B6020D20FF3DDE000DAC14 /* HS5CAR_SSZipArchive.m */; };
+		53B6023F20FF3DDF000DAC14 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 53B6020E20FF3DDE000DAC14 /* Info.plist */; };
+		53B6024020FF3DDF000DAC14 /* HS5LoadFailedAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 53B6020F20FF3DDE000DAC14 /* HS5LoadFailedAlertView.m */; };
+		53B6024120FF3DDF000DAC14 /* HS5ShareManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 53B6021120FF3DDE000DAC14 /* HS5ShareManager.m */; };
+		53B6024220FF3DDF000DAC14 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 53B6021520FF3DDE000DAC14 /* AppDelegate.m */; };
+		53B6024921002819000DAC14 /* Default-667h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 53B6024421002818000DAC14 /* Default-667h@2x.png */; };
+		53B6024A21002819000DAC14 /* bg_splash_2436*1125.png in Resources */ = {isa = PBXBuildFile; fileRef = 53B6024521002818000DAC14 /* bg_splash_2436*1125.png */; };
+		53B6024B21002819000DAC14 /* Default-Landscape-736h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 53B6024621002818000DAC14 /* Default-Landscape-736h@3x.png */; };
+		53B6024C21002819000DAC14 /* Default-568h.png in Resources */ = {isa = PBXBuildFile; fileRef = 53B6024721002819000DAC14 /* Default-568h.png */; };
+		53B6024D21002819000DAC14 /*  Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 53B6024821002819000DAC14 /*  Default@2x.png */; };
+		53B6024E210028DE000DAC14 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53B601BB20FF3DDE000DAC14 /* LaunchScreen.storyboard */; };
+		53F1C29522326BF70093225C /* HS5LoadingProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 53F1C29422326BF70093225C /* HS5LoadingProgressView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4B92A7C420F5AB89005B6EEE /* HongQiHS5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HongQiHS5.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		53B601B820FF3DDE000DAC14 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		53B601B920FF3DDE000DAC14 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		53B601BA20FF3DDE000DAC14 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		53B601BC20FF3DDE000DAC14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		53B601BE20FF3DDE000DAC14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		53B601BF20FF3DDE000DAC14 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		53B601C120FF3DDE000DAC14 /* hs5_prng.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hs5_prng.h; sourceTree = "<group>"; };
+		53B601C220FF3DDE000DAC14 /* HS5WelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HS5WelcomeViewController.h; sourceTree = "<group>"; };
+		53B601C320FF3DDE000DAC14 /* hs5_aeskey.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hs5_aeskey.c; sourceTree = "<group>"; };
+		53B601C420FF3DDE000DAC14 /* hs5_hmac.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hs5_hmac.c; sourceTree = "<group>"; };
+		53B601C520FF3DDE000DAC14 /* HS5CAR_AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HS5CAR_AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		53B601C620FF3DDE000DAC14 /* HS5JKWKWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HS5JKWKWebViewController.m; sourceTree = "<group>"; };
+		53B601C720FF3DDE000DAC14 /* HS5CAR_AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HS5CAR_AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		53B601C820FF3DDE000DAC14 /* HS5ChooseCarModelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HS5ChooseCarModelViewController.h; sourceTree = "<group>"; };
+		53B601C920FF3DDE000DAC14 /* HS5JKEventHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HS5JKEventHandler.h; sourceTree = "<group>"; };
+		53B601CA20FF3DDE000DAC14 /* HS5JKWKWebViewHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HS5JKWKWebViewHandler.h; sourceTree = "<group>"; };
+		53B601CB20FF3DDE000DAC14 /* HS5CarBundleTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HS5CarBundleTool.h; sourceTree = "<group>"; };
+		53B601CC20FF3DDE000DAC14 /* hs5_aestab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hs5_aestab.h; sourceTree = "<group>"; };
+		53B601CD20FF3DDE000DAC14 /* JKEventHandler+HS5Car.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JKEventHandler+HS5Car.m"; sourceTree = "<group>"; };
+		53B601CE20FF3DDE000DAC14 /* UIColor+HS5CARUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+HS5CARUtil.h"; sourceTree = "<group>"; };
+		53B601CF20FF3DDE000DAC14 /* hs5_unzip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hs5_unzip.c; sourceTree = "<group>"; };
+		53B601D020FF3DDE000DAC14 /* HS5CAR_AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HS5CAR_AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		53B601D120FF3DDE000DAC14 /* hs5_pwd2key.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hs5_pwd2key.h; sourceTree = "<group>"; };
+		53B601D220FF3DDE000DAC14 /* hs5_aescrypt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hs5_aescrypt.c; sourceTree = "<group>"; };
+		53B601D320FF3DDE000DAC14 /* hs5_zip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hs5_zip.c; sourceTree = "<group>"; };
+		53B601D420FF3DDE000DAC14 /* HS5CAR_AFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HS5CAR_AFSecurityPolicy.m; sourceTree = "<group>"; };
+		53B601D520FF3DDE000DAC14 /* HS5CAR_AFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HS5CAR_AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		53B601D620FF3DDE000DAC14 /* HS5CAR_AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HS5CAR_AFNetworking.h; sourceTree = "<group>"; };
+		53B601D720FF3DDE000DAC14 /* HS5ZipArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HS5ZipArchive.h; sourceTree = "<group>"; };
+		53B601D820FF3DDE000DAC14 /* hs5_fileenc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hs5_fileenc.c; sourceTree = "<group>"; };
+		53B601D920FF3DDE000DAC14 /* HS5CARCategoriesMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HS5CARCategoriesMacro.h; sourceTree = "<group>"; };
+		53B601DA20FF3DDE000DAC14 /* hs5_ioapi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hs5_ioapi.c; sourceTree = "<group>"; };
+		53B601DB20FF3DDE000DAC14 /* hs5_aesopt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hs5_aesopt.h; sourceTree = "<group>"; };
+		53B601DC20FF3DDE000DAC14 /* hs5_aes_via_ace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hs5_aes_via_ace.h; sourceTree = "<group>"; };
+		53B601DD20FF3DDE000DAC14 /* UIView+HS5frameAdjust.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+HS5frameAdjust.m"; sourceTree = "<group>"; };
+		53B601DE20FF3DDE000DAC14 /* HS5CAR_AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HS5CAR_AFURLSessionManager.h; sourceTree = "<group>"; };
+		53B601E020FF3DDE000DAC14 /* hs5_mztools.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hs5_mztools.c; sourceTree = "<group>"; };
+		53B601E120FF3DDE000DAC14 /* hs5_sha1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hs5_sha1.c; sourceTree = "<group>"; };
+		53B601E220FF3DDE000DAC14 /* UIView+HS5CARAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+HS5CARAdd.m"; sourceTree = "<group>"; };
+		53B601E320FF3DDE000DAC14 /* HS5CAR_AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HS5CAR_AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		53B601E420FF3DDE000DAC14 /* hs5_brg_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hs5_brg_types.h; sourceTree = "<group>"; };
+		53B601E520FF3DDE000DAC14 /* HS5ShareManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HS5ShareManager.h; sourceTree = "<group>"; };
+		53B601E620FF3DDE000DAC14 /* HS5CAR_AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HS5CAR_AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		53B601E720FF3DDE000DAC14 /* HS5CAR_AFHTTPRequestOperationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HS5CAR_AFHTTPRequestOperationManager.m; sourceTree = "<group>"; };
+		53B601E820FF3DDE000DAC14 /* HS5CarResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = HS5CarResource.bundle; sourceTree = "<group>"; };
+		53B601E920FF3DDE000DAC14 /* HS5LoadFailedAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HS5LoadFailedAlertView.h; sourceTree = "<group>"; };
+		53B601EA20FF3DDE000DAC14 /* HS5CAR_SSZipArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HS5CAR_SSZipArchive.h; sourceTree = "<group>"; };
+		53B601EB20FF3DDE000DAC14 /* hs5_entropy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hs5_entropy.h; sourceTree = "<group>"; };
+		53B601EC20FF3DDE000DAC14 /* HS5JKEventHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HS5JKEventHandler.m; sourceTree = "<group>"; };
+		53B601ED20FF3DDE000DAC14 /* HS5ChooseCarModelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HS5ChooseCarModelViewController.m; sourceTree = "<group>"; };
+		53B601EE20FF3DDE000DAC14 /* HS5CAR_AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HS5CAR_AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		53B601EF20FF3DDE000DAC14 /* HS5CAR_AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HS5CAR_AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		53B601F020FF3DDE000DAC14 /* HS5JKWKWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HS5JKWKWebViewController.h; sourceTree = "<group>"; };
+		53B601F120FF3DDE000DAC14 /* hs5_crypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hs5_crypt.h; sourceTree = "<group>"; };
+		53B601F220FF3DDE000DAC14 /* hs5_Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hs5_Common.h; sourceTree = "<group>"; };
+		53B601F320FF3DDE000DAC14 /* hs5_hmac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hs5_hmac.h; sourceTree = "<group>"; };
+		53B601F420FF3DDE000DAC14 /* hs5_brg_endian.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hs5_brg_endian.h; sourceTree = "<group>"; };
+		53B601F520FF3DDE000DAC14 /* hs5_prng.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hs5_prng.c; sourceTree = "<group>"; };
+		53B601F620FF3DDE000DAC14 /* HS5WelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HS5WelcomeViewController.m; sourceTree = "<group>"; };
+		53B601F720FF3DDE000DAC14 /* hs5_aes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hs5_aes.h; sourceTree = "<group>"; };
+		53B601F820FF3DDE000DAC14 /* hs5_zip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hs5_zip.h; sourceTree = "<group>"; };
+		53B601F920FF3DDE000DAC14 /* HS5CAR_AFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HS5CAR_AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		53B601FA20FF3DDE000DAC14 /* HS5CAR_AFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HS5CAR_AFSecurityPolicy.h; sourceTree = "<group>"; };
+		53B601FB20FF3DDE000DAC14 /* hs5_pwd2key.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hs5_pwd2key.c; sourceTree = "<group>"; };
+		53B601FC20FF3DDE000DAC14 /* HS5CAR_AFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HS5CAR_AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		53B601FD20FF3DDE000DAC14 /* UIColor+HS5CARUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HS5CARUtil.m"; sourceTree = "<group>"; };
+		53B601FE20FF3DDE000DAC14 /* HS5CarAppConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HS5CarAppConstant.h; sourceTree = "<group>"; };
+		53B601FF20FF3DDE000DAC14 /* JKEventHandler+HS5Car.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JKEventHandler+HS5Car.h"; sourceTree = "<group>"; };
+		53B6020020FF3DDE000DAC14 /* hs5_unzip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hs5_unzip.h; sourceTree = "<group>"; };
+		53B6020120FF3DDE000DAC14 /* HS5CarBundleTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HS5CarBundleTool.m; sourceTree = "<group>"; };
+		53B6020220FF3DDE000DAC14 /* hs5_aestab.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hs5_aestab.c; sourceTree = "<group>"; };
+		53B6020320FF3DDE000DAC14 /* hs5_sha1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hs5_sha1.h; sourceTree = "<group>"; };
+		53B6020420FF3DDE000DAC14 /* HS5CarAppSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HS5CarAppSDK.h; sourceTree = "<group>"; };
+		53B6020620FF3DDE000DAC14 /* hs5_mztools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hs5_mztools.h; sourceTree = "<group>"; };
+		53B6020720FF3DDE000DAC14 /* UIView+HS5frameAdjust.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+HS5frameAdjust.h"; sourceTree = "<group>"; };
+		53B6020820FF3DDE000DAC14 /* HS5CAR_AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HS5CAR_AFURLSessionManager.m; sourceTree = "<group>"; };
+		53B6020920FF3DDE000DAC14 /* hs5_fileenc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hs5_fileenc.h; sourceTree = "<group>"; };
+		53B6020A20FF3DDE000DAC14 /* hs5_ioapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hs5_ioapi.h; sourceTree = "<group>"; };
+		53B6020B20FF3DDE000DAC14 /* HS5PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HS5PrefixHeader.pch; sourceTree = "<group>"; };
+		53B6020C20FF3DDE000DAC14 /* hs5_entropy.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hs5_entropy.c; sourceTree = "<group>"; };
+		53B6020D20FF3DDE000DAC14 /* HS5CAR_SSZipArchive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HS5CAR_SSZipArchive.m; sourceTree = "<group>"; };
+		53B6020E20FF3DDE000DAC14 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		53B6020F20FF3DDE000DAC14 /* HS5LoadFailedAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HS5LoadFailedAlertView.m; sourceTree = "<group>"; };
+		53B6021020FF3DDE000DAC14 /* HS5CAR_AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HS5CAR_AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
+		53B6021120FF3DDE000DAC14 /* HS5ShareManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HS5ShareManager.m; sourceTree = "<group>"; };
+		53B6021220FF3DDE000DAC14 /* HS5CAR_AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HS5CAR_AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		53B6021320FF3DDE000DAC14 /* HS5CAR_AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HS5CAR_AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		53B6021420FF3DDE000DAC14 /* UIView+HS5CARAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+HS5CARAdd.h"; sourceTree = "<group>"; };
+		53B6021520FF3DDE000DAC14 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		53B6021620FF3DDE000DAC14 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		53B6021720FF3DDE000DAC14 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		53B6024421002818000DAC14 /* Default-667h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-667h@2x.png"; sourceTree = "<group>"; };
+		53B6024521002818000DAC14 /* bg_splash_2436*1125.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg_splash_2436*1125.png"; sourceTree = "<group>"; };
+		53B6024621002818000DAC14 /* Default-Landscape-736h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape-736h@3x.png"; sourceTree = "<group>"; };
+		53B6024721002819000DAC14 /* Default-568h.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h.png"; sourceTree = "<group>"; };
+		53B6024821002819000DAC14 /*  Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = " Default@2x.png"; sourceTree = "<group>"; };
+		53F1C29322326BF70093225C /* HS5LoadingProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HS5LoadingProgressView.h; sourceTree = "<group>"; };
+		53F1C29422326BF70093225C /* HS5LoadingProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HS5LoadingProgressView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4B92A7C120F5AB89005B6EEE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4B92A7BB20F5AB89005B6EEE = {
+			isa = PBXGroup;
+			children = (
+				53B601B720FF3DDE000DAC14 /* HongQiHS5SDKiOS */,
+				4B92A7C520F5AB89005B6EEE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4B92A7C520F5AB89005B6EEE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4B92A7C420F5AB89005B6EEE /* HongQiHS5.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		53B601B720FF3DDE000DAC14 /* HongQiHS5SDKiOS */ = {
+			isa = PBXGroup;
+			children = (
+				53B6024821002819000DAC14 /*  Default@2x.png */,
+				53B6024521002818000DAC14 /* bg_splash_2436*1125.png */,
+				53B6024721002819000DAC14 /* Default-568h.png */,
+				53B6024421002818000DAC14 /* Default-667h@2x.png */,
+				53B6024621002818000DAC14 /* Default-Landscape-736h@3x.png */,
+				53B601B820FF3DDE000DAC14 /* AppDelegate.h */,
+				53B601B920FF3DDE000DAC14 /* Assets.xcassets */,
+				53B601BA20FF3DDE000DAC14 /* ViewController.m */,
+				53B601BB20FF3DDE000DAC14 /* LaunchScreen.storyboard */,
+				53B601BD20FF3DDE000DAC14 /* Main.storyboard */,
+				53B601BF20FF3DDE000DAC14 /* main.m */,
+				53B601C020FF3DDE000DAC14 /* HongQiHS5SDK */,
+				53B6021520FF3DDE000DAC14 /* AppDelegate.m */,
+				53B6021620FF3DDE000DAC14 /* Info.plist */,
+				53B6021720FF3DDE000DAC14 /* ViewController.h */,
+			);
+			path = HongQiHS5SDKiOS;
+			sourceTree = "<group>";
+		};
+		53B601C020FF3DDE000DAC14 /* HongQiHS5SDK */ = {
+			isa = PBXGroup;
+			children = (
+				53B601C120FF3DDE000DAC14 /* hs5_prng.h */,
+				53B601C220FF3DDE000DAC14 /* HS5WelcomeViewController.h */,
+				53B601C320FF3DDE000DAC14 /* hs5_aeskey.c */,
+				53B601C420FF3DDE000DAC14 /* hs5_hmac.c */,
+				53B601C520FF3DDE000DAC14 /* HS5CAR_AFHTTPSessionManager.m */,
+				53B601C620FF3DDE000DAC14 /* HS5JKWKWebViewController.m */,
+				53B601C720FF3DDE000DAC14 /* HS5CAR_AFURLConnectionOperation.h */,
+				53B601C820FF3DDE000DAC14 /* HS5ChooseCarModelViewController.h */,
+				53B601C920FF3DDE000DAC14 /* HS5JKEventHandler.h */,
+				53B601CA20FF3DDE000DAC14 /* HS5JKWKWebViewHandler.h */,
+				53B601CB20FF3DDE000DAC14 /* HS5CarBundleTool.h */,
+				53B601CC20FF3DDE000DAC14 /* hs5_aestab.h */,
+				53B601CD20FF3DDE000DAC14 /* JKEventHandler+HS5Car.m */,
+				53B601CE20FF3DDE000DAC14 /* UIColor+HS5CARUtil.h */,
+				53B601CF20FF3DDE000DAC14 /* hs5_unzip.c */,
+				53B601D020FF3DDE000DAC14 /* HS5CAR_AFURLResponseSerialization.m */,
+				53B601D120FF3DDE000DAC14 /* hs5_pwd2key.h */,
+				53B601D220FF3DDE000DAC14 /* hs5_aescrypt.c */,
+				53B601D320FF3DDE000DAC14 /* hs5_zip.c */,
+				53B601D420FF3DDE000DAC14 /* HS5CAR_AFSecurityPolicy.m */,
+				53B601D520FF3DDE000DAC14 /* HS5CAR_AFURLRequestSerialization.m */,
+				53B601D620FF3DDE000DAC14 /* HS5CAR_AFNetworking.h */,
+				53B601D720FF3DDE000DAC14 /* HS5ZipArchive.h */,
+				53B601D820FF3DDE000DAC14 /* hs5_fileenc.c */,
+				53B601D920FF3DDE000DAC14 /* HS5CARCategoriesMacro.h */,
+				53B601DA20FF3DDE000DAC14 /* hs5_ioapi.c */,
+				53B601DB20FF3DDE000DAC14 /* hs5_aesopt.h */,
+				53B601DC20FF3DDE000DAC14 /* hs5_aes_via_ace.h */,
+				53B601DD20FF3DDE000DAC14 /* UIView+HS5frameAdjust.m */,
+				53B601DE20FF3DDE000DAC14 /* HS5CAR_AFURLSessionManager.h */,
+				53B601E020FF3DDE000DAC14 /* hs5_mztools.c */,
+				53B601E120FF3DDE000DAC14 /* hs5_sha1.c */,
+				53B601E220FF3DDE000DAC14 /* UIView+HS5CARAdd.m */,
+				53B601E320FF3DDE000DAC14 /* HS5CAR_AFNetworkReachabilityManager.m */,
+				53B601E420FF3DDE000DAC14 /* hs5_brg_types.h */,
+				53B601E520FF3DDE000DAC14 /* HS5ShareManager.h */,
+				53B601E620FF3DDE000DAC14 /* HS5CAR_AFHTTPRequestOperation.m */,
+				53B601E720FF3DDE000DAC14 /* HS5CAR_AFHTTPRequestOperationManager.m */,
+				53B601E820FF3DDE000DAC14 /* HS5CarResource.bundle */,
+				53B601E920FF3DDE000DAC14 /* HS5LoadFailedAlertView.h */,
+				53B601EA20FF3DDE000DAC14 /* HS5CAR_SSZipArchive.h */,
+				53B601EB20FF3DDE000DAC14 /* hs5_entropy.h */,
+				53B601EC20FF3DDE000DAC14 /* HS5JKEventHandler.m */,
+				53B601ED20FF3DDE000DAC14 /* HS5ChooseCarModelViewController.m */,
+				53B601EE20FF3DDE000DAC14 /* HS5CAR_AFHTTPSessionManager.h */,
+				53B601EF20FF3DDE000DAC14 /* HS5CAR_AFURLConnectionOperation.m */,
+				53B601F020FF3DDE000DAC14 /* HS5JKWKWebViewController.h */,
+				53B601F120FF3DDE000DAC14 /* hs5_crypt.h */,
+				53B601F220FF3DDE000DAC14 /* hs5_Common.h */,
+				53B601F320FF3DDE000DAC14 /* hs5_hmac.h */,
+				53B601F420FF3DDE000DAC14 /* hs5_brg_endian.h */,
+				53B601F520FF3DDE000DAC14 /* hs5_prng.c */,
+				53B601F620FF3DDE000DAC14 /* HS5WelcomeViewController.m */,
+				53B601F720FF3DDE000DAC14 /* hs5_aes.h */,
+				53B601F820FF3DDE000DAC14 /* hs5_zip.h */,
+				53B601F920FF3DDE000DAC14 /* HS5CAR_AFURLRequestSerialization.h */,
+				53B601FA20FF3DDE000DAC14 /* HS5CAR_AFSecurityPolicy.h */,
+				53B601FB20FF3DDE000DAC14 /* hs5_pwd2key.c */,
+				53B601FC20FF3DDE000DAC14 /* HS5CAR_AFURLResponseSerialization.h */,
+				53B601FD20FF3DDE000DAC14 /* UIColor+HS5CARUtil.m */,
+				53B601FE20FF3DDE000DAC14 /* HS5CarAppConstant.h */,
+				53B601FF20FF3DDE000DAC14 /* JKEventHandler+HS5Car.h */,
+				53B6020020FF3DDE000DAC14 /* hs5_unzip.h */,
+				53B6020120FF3DDE000DAC14 /* HS5CarBundleTool.m */,
+				53B6020220FF3DDE000DAC14 /* hs5_aestab.c */,
+				53B6020320FF3DDE000DAC14 /* hs5_sha1.h */,
+				53B6020420FF3DDE000DAC14 /* HS5CarAppSDK.h */,
+				53B6020620FF3DDE000DAC14 /* hs5_mztools.h */,
+				53B6020720FF3DDE000DAC14 /* UIView+HS5frameAdjust.h */,
+				53F1C29322326BF70093225C /* HS5LoadingProgressView.h */,
+				53F1C29422326BF70093225C /* HS5LoadingProgressView.m */,
+				53B6020820FF3DDE000DAC14 /* HS5CAR_AFURLSessionManager.m */,
+				53B6020920FF3DDE000DAC14 /* hs5_fileenc.h */,
+				53B6020A20FF3DDE000DAC14 /* hs5_ioapi.h */,
+				53B6020B20FF3DDE000DAC14 /* HS5PrefixHeader.pch */,
+				53B6020C20FF3DDE000DAC14 /* hs5_entropy.c */,
+				53B6020D20FF3DDE000DAC14 /* HS5CAR_SSZipArchive.m */,
+				53B6020E20FF3DDE000DAC14 /* Info.plist */,
+				53B6020F20FF3DDE000DAC14 /* HS5LoadFailedAlertView.m */,
+				53B6021020FF3DDE000DAC14 /* HS5CAR_AFHTTPRequestOperationManager.h */,
+				53B6021120FF3DDE000DAC14 /* HS5ShareManager.m */,
+				53B6021220FF3DDE000DAC14 /* HS5CAR_AFHTTPRequestOperation.h */,
+				53B6021320FF3DDE000DAC14 /* HS5CAR_AFNetworkReachabilityManager.h */,
+				53B6021420FF3DDE000DAC14 /* UIView+HS5CARAdd.h */,
+			);
+			path = HongQiHS5SDK;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4B92A7C320F5AB89005B6EEE /* HongQiHS5 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B92A7DA20F5AB89005B6EEE /* Build configuration list for PBXNativeTarget "HongQiHS5" */;
+			buildPhases = (
+				4B92A7C020F5AB89005B6EEE /* Sources */,
+				4B92A7C120F5AB89005B6EEE /* Frameworks */,
+				4B92A7C220F5AB89005B6EEE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HongQiHS5;
+			productName = CarSDKiOS;
+			productReference = 4B92A7C420F5AB89005B6EEE /* HongQiHS5.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4B92A7BC20F5AB89005B6EEE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = freedomTeam;
+				TargetAttributes = {
+					4B92A7C320F5AB89005B6EEE = {
+						CreatedOnToolsVersion = 9.3;
+					};
+				};
+			};
+			buildConfigurationList = 4B92A7BF20F5AB89005B6EEE /* Build configuration list for PBXProject "HongQiHS5" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4B92A7BB20F5AB89005B6EEE;
+			productRefGroup = 4B92A7C520F5AB89005B6EEE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4B92A7C320F5AB89005B6EEE /* HongQiHS5 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4B92A7C220F5AB89005B6EEE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53B6024A21002819000DAC14 /* bg_splash_2436*1125.png in Resources */,
+				53B6023120FF3DDF000DAC14 /* HS5CarResource.bundle in Resources */,
+				53B6024921002819000DAC14 /* Default-667h@2x.png in Resources */,
+				53B6021B20FF3DDF000DAC14 /* Main.storyboard in Resources */,
+				53B6024B21002819000DAC14 /* Default-Landscape-736h@3x.png in Resources */,
+				53B6021820FF3DDF000DAC14 /* Assets.xcassets in Resources */,
+				53B6024D21002819000DAC14 /*  Default@2x.png in Resources */,
+				53B6024C21002819000DAC14 /* Default-568h.png in Resources */,
+				53B6024E210028DE000DAC14 /* LaunchScreen.storyboard in Resources */,
+				53B6023F20FF3DDF000DAC14 /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4B92A7C020F5AB89005B6EEE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53B6024220FF3DDF000DAC14 /* AppDelegate.m in Sources */,
+				53B6023520FF3DDF000DAC14 /* hs5_prng.c in Sources */,
+				53B6023320FF3DDF000DAC14 /* HS5ChooseCarModelViewController.m in Sources */,
+				53F1C29522326BF70093225C /* HS5LoadingProgressView.m in Sources */,
+				53B6023620FF3DDF000DAC14 /* HS5WelcomeViewController.m in Sources */,
+				53B6022520FF3DDF000DAC14 /* hs5_zip.c in Sources */,
+				53B6022020FF3DDF000DAC14 /* HS5JKWKWebViewController.m in Sources */,
+				53B6021F20FF3DDF000DAC14 /* HS5CAR_AFHTTPSessionManager.m in Sources */,
+				53B6022120FF3DDF000DAC14 /* JKEventHandler+HS5Car.m in Sources */,
+				53B6022F20FF3DDF000DAC14 /* HS5CAR_AFHTTPRequestOperation.m in Sources */,
+				53B6021E20FF3DDF000DAC14 /* hs5_hmac.c in Sources */,
+				53B6022620FF3DDF000DAC14 /* HS5CAR_AFSecurityPolicy.m in Sources */,
+				53B6023220FF3DDF000DAC14 /* HS5JKEventHandler.m in Sources */,
+				53B6021D20FF3DDF000DAC14 /* hs5_aeskey.c in Sources */,
+				53B6023720FF3DDF000DAC14 /* hs5_pwd2key.c in Sources */,
+				53B6022B20FF3DDF000DAC14 /* hs5_mztools.c in Sources */,
+				53B6023020FF3DDF000DAC14 /* HS5CAR_AFHTTPRequestOperationManager.m in Sources */,
+				53B6022320FF3DDF000DAC14 /* HS5CAR_AFURLResponseSerialization.m in Sources */,
+				53B6024120FF3DDF000DAC14 /* HS5ShareManager.m in Sources */,
+				53B6022720FF3DDF000DAC14 /* HS5CAR_AFURLRequestSerialization.m in Sources */,
+				53B6023C20FF3DDF000DAC14 /* HS5CAR_AFURLSessionManager.m in Sources */,
+				53B6022A20FF3DDF000DAC14 /* UIView+HS5frameAdjust.m in Sources */,
+				53B6023D20FF3DDF000DAC14 /* hs5_entropy.c in Sources */,
+				53B6023A20FF3DDF000DAC14 /* hs5_aestab.c in Sources */,
+				53B6022E20FF3DDF000DAC14 /* HS5CAR_AFNetworkReachabilityManager.m in Sources */,
+				53B6022D20FF3DDF000DAC14 /* UIView+HS5CARAdd.m in Sources */,
+				53B6022920FF3DDF000DAC14 /* hs5_ioapi.c in Sources */,
+				53B6022C20FF3DDF000DAC14 /* hs5_sha1.c in Sources */,
+				53B6021C20FF3DDF000DAC14 /* main.m in Sources */,
+				53B6023E20FF3DDF000DAC14 /* HS5CAR_SSZipArchive.m in Sources */,
+				53B6022220FF3DDF000DAC14 /* hs5_unzip.c in Sources */,
+				53B6024020FF3DDF000DAC14 /* HS5LoadFailedAlertView.m in Sources */,
+				53B6022420FF3DDF000DAC14 /* hs5_aescrypt.c in Sources */,
+				53B6022820FF3DDF000DAC14 /* hs5_fileenc.c in Sources */,
+				53B6023820FF3DDF000DAC14 /* UIColor+HS5CARUtil.m in Sources */,
+				53B6021920FF3DDF000DAC14 /* ViewController.m in Sources */,
+				53B6023920FF3DDF000DAC14 /* HS5CarBundleTool.m in Sources */,
+				53B6023420FF3DDF000DAC14 /* HS5CAR_AFURLConnectionOperation.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		53B601BB20FF3DDE000DAC14 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				53B601BC20FF3DDE000DAC14 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		53B601BD20FF3DDE000DAC14 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				53B601BE20FF3DDE000DAC14 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4B92A7D820F5AB89005B6EEE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4B92A7D920F5AB89005B6EEE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4B92A7DB20F5AB89005B6EEE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E7GV6V6TQR;
+				INFOPLIST_FILE = "$(SRCROOT)/HongQiHS5SDKiOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.manual.h5;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4B92A7DC20F5AB89005B6EEE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E7GV6V6TQR;
+				INFOPLIST_FILE = "$(SRCROOT)/HongQiHS5SDKiOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.manual.h5;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4B92A7BF20F5AB89005B6EEE /* Build configuration list for PBXProject "HongQiHS5" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B92A7D820F5AB89005B6EEE /* Debug */,
+				4B92A7D920F5AB89005B6EEE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B92A7DA20F5AB89005B6EEE /* Build configuration list for PBXNativeTarget "HongQiHS5" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B92A7DB20F5AB89005B6EEE /* Debug */,
+				4B92A7DC20F5AB89005B6EEE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4B92A7BC20F5AB89005B6EEE /* Project object */;
+}
