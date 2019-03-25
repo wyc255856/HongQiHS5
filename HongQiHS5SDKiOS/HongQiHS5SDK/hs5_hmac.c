@@ -34,6 +34,8 @@
 
 #include "hs5_hmac.h"
 #include "hs5_brg_types.h"
+#include <memory.h>
+
 
 #if defined(__cplusplus)
 extern "C"
