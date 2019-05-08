@@ -116,10 +116,29 @@
         CGFloat RectW = (_searchView.size.width - 10*KScale- 10*KScale- 10*KScale)/6;
         NSArray *arrTag = @[@"100001", @"100002", @"100003", @"100004", @"100005"];
         NSArray *arrName = @[@"智联旗悦版", @"智联旗享版", @"智联旗享四驱版", @"智联旗领版", @"智联旗领四驱版"];
+        
+        CGFloat nRectW = (RectW*5 + 10*KScale)/5;
         for(int i = 0; i<5; i++){
-            UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(10*KScale+i*RectW, 0, RectW, _searchView.size.height)];
+            //UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(10*KScale+i*RectW, 0, RectW, _searchView.size.height)];
+            UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(i*nRectW, 0, nRectW, _searchView.size.height)];
+//
+            if ([@"100001" isEqualToString:[arrTag objectAtIndex:i]]) {
+//                label.frame =CGRectMake(i*nRectW, 0, nRectW-5, _searchView.size.height);
+            }else if ( [@"100002" isEqualToString:[arrTag objectAtIndex:i]]){
+                label.frame =CGRectMake(nRectW-5, 0, nRectW, _searchView.size.height);
+            }
+            if ([@"100003" isEqualToString:[arrTag objectAtIndex:i]]) {
+                label.frame =CGRectMake(i*nRectW-5, 0, nRectW+5, _searchView.size.height);
+            }else if ( [@"100005" isEqualToString:[arrTag objectAtIndex:i]]){
+                label.frame =CGRectMake(i*nRectW, 0, nRectW+5, _searchView.size.height);
+            }
             label.textColor = [UIColor whiteColor];
             label.textAlignment = NSTextAlignmentCenter;
+//            if ([@"100004" isEqualToString:[arrTag objectAtIndex:i]]) {
+//                label.textAlignment = NSTextAlignmentCenter;
+//            }else{
+//                label.textAlignment = NSTextAlignmentLeft;
+//            }
             label.font = [UIFont systemFontOfSize:6*KScale];
             label.tag = [[arrTag objectAtIndex:i] integerValue];
             label.text = [arrName objectAtIndex:i];
