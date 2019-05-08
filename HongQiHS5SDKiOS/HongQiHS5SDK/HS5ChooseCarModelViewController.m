@@ -112,11 +112,10 @@
         NSString *chooseCarImageNameBg = @"bg_choose_cartype";
         imageView.image =  resourceBundle?[UIImage imageNamed:chooseCarImageNameBg inBundle:resourceBundle compatibleWithTraitCollection:nil]:[UIImage imageNamed:chooseCarImageNameBg];
         [_searchView addSubview:imageView];
-        
     
         CGFloat RectW = (_searchView.size.width - 10*KScale- 10*KScale- 10*KScale)/6;
         NSArray *arrTag = @[@"100001", @"100002", @"100003", @"100004", @"100005"];
-        NSArray *arrName = @[@"低配两驱", @"中配两驱", @"中配四驱", @"高配两驱", @"高配四驱"];
+        NSArray *arrName = @[@"智联旗悦版", @"智联旗享版", @"智联旗享四驱版", @"智联旗领版", @"智联旗领四驱版"];
         for(int i = 0; i<5; i++){
             UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(10*KScale+i*RectW, 0, RectW, _searchView.size.height)];
             label.textColor = [UIColor whiteColor];
@@ -134,12 +133,9 @@
         _searchViewLabel.textColor = [UIColor whiteColor];
         _searchViewLabel.textAlignment = NSTextAlignmentCenter;
         _searchViewLabel.font = [UIFont systemFontOfSize:6*KScale];
-        _searchViewLabel.text = @"高配四驱";
+        _searchViewLabel.text = @"智联旗悦版";
         [_searchView addSubview:_searchViewLabel];
 
-        
-        
-        
         
         
         /*
@@ -238,19 +234,19 @@
 
     switch (tag) {
         case 100001:
-            _searchViewLabel.text = @"低配两驱";
+            _searchViewLabel.text = @"智联旗悦版";
             break;
         case 100002:
-            _searchViewLabel.text = @"中配两驱";
+            _searchViewLabel.text = @"智联旗享版";
             break;
         case 100003:
-            _searchViewLabel.text = @"中配四驱";
+            _searchViewLabel.text = @"智联旗享四驱版";
             break;
         case 100004:
-            _searchViewLabel.text = @"高配两驱";
+            _searchViewLabel.text = @"智联旗领版";
             break;
         case 100005:
-            _searchViewLabel.text = @"高配四驱";
+            _searchViewLabel.text = @"智联旗领四驱版";
             break;
         case 100006:
             _searchViewLabel.text = @"自动尊贵";
@@ -280,19 +276,19 @@
 
     switch (tag) {
         case 100001:
-            _searchViewLabel.text = @"低配两驱";
+            _searchViewLabel.text = @"智联旗悦版";
             break;
         case 100002:
-            _searchViewLabel.text = @"中配两驱";
+            _searchViewLabel.text = @"智联旗享版";
             break;
         case 100003:
-            _searchViewLabel.text = @"中配四驱";
+            _searchViewLabel.text = @"智联旗享四驱版";
             break;
         case 100004:
-            _searchViewLabel.text = @"高配两驱";
+            _searchViewLabel.text = @"智联旗领版";
             break;
         case 100005:
-            _searchViewLabel.text = @"高配四驱";
+            _searchViewLabel.text = @"智联旗领四驱版";
             break;
         case 100006:
             _searchViewLabel.text = @"自动尊贵";
@@ -369,7 +365,6 @@
         float lineLeft = 0*KScale;
         NSString *resNameLine = @"line";
         NSString *resNameBtnSel = @"image_btn_sel_choose";
-
         //手动舒适
         UIButton *btnType_1 = [[UIButton alloc] initWithFrame:CGRectMake(btnLeft, 0.5*lineHeight, _chooseCarModelView.width, btnHeight)];
         btnType_1.tag = 100001;
@@ -378,7 +373,7 @@
         UILabel * labelTypeName_1 = [[UILabel alloc] initWithFrame:CGRectMake(btnLeft, 0.5*lineHeight, _chooseCarModelView.width, btnHeight)];
         labelTypeName_1.font = [UIFont systemFontOfSize:10*KScale];
         labelTypeName_1.textColor = [UIColor whiteColor];
-        labelTypeName_1.text = @"型动版";
+        labelTypeName_1.text = @"智联旗悦版";
         labelTypeName_1.textAlignment = NSTextAlignmentCenter;
         [btnType_1 addSubview:labelTypeName_1];
         UIImage *imageBtnSel_1=  resourceBundle?[UIImage imageNamed:resNameBtnSel inBundle:resourceBundle compatibleWithTraitCollection:nil]:[UIImage imageNamed:resNameBtnSel];
@@ -399,7 +394,7 @@
         UILabel * labelTypeName_2 = [[UILabel alloc] initWithFrame:CGRectMake(btnLeft, 0.5*lineHeight, _chooseCarModelView.width, btnHeight)];
         labelTypeName_2.font = [UIFont systemFontOfSize:10*KScale];
         labelTypeName_2.textColor = [UIColor whiteColor];
-        labelTypeName_2.text = @"智联灵动版";
+        labelTypeName_2.text = @"智联旗享版";
         labelTypeName_2.textAlignment = NSTextAlignmentCenter;
         [btnType_2 addSubview:labelTypeName_2];
         UIImage *imageBtnSel_2=  resourceBundle?[UIImage imageNamed:resNameBtnSel inBundle:resourceBundle compatibleWithTraitCollection:nil]:[UIImage imageNamed:resNameBtnSel];
@@ -422,7 +417,7 @@
         UILabel * labelTypeName_3 = [[UILabel alloc] initWithFrame:CGRectMake(btnLeft, 0.5*lineHeight, _chooseCarModelView.width, btnHeight)];
         labelTypeName_3.font = [UIFont systemFontOfSize:10*KScale];
         labelTypeName_3.textColor = [UIColor whiteColor];
-        labelTypeName_3.text = @"智联韵动版";
+        labelTypeName_3.text = @"智联旗享四驱版";
         labelTypeName_3.textAlignment = NSTextAlignmentCenter;
         [btnType_3 addSubview:labelTypeName_3];
         UIImage *imageBtnSel_3 =  resourceBundle?[UIImage imageNamed:resNameBtnSel inBundle:resourceBundle compatibleWithTraitCollection:nil]:[UIImage imageNamed:resNameBtnSel];
@@ -446,7 +441,7 @@
         UILabel * labelTypeName_4 = [[UILabel alloc] initWithFrame:CGRectMake(btnLeft, 0.5*lineHeight, _chooseCarModelView.width, btnHeight)];
         labelTypeName_4.font = [UIFont systemFontOfSize:10*KScale];
         labelTypeName_4.textColor = [UIColor whiteColor];
-        labelTypeName_4.text = @"智联享动版";
+        labelTypeName_4.text = @"智联旗领版";
         labelTypeName_4.textAlignment = NSTextAlignmentCenter;
         [btnType_4 addSubview:labelTypeName_4];
         UIImage *imageBtnSel_4 =  resourceBundle?[UIImage imageNamed:resNameBtnSel inBundle:resourceBundle compatibleWithTraitCollection:nil]:[UIImage imageNamed:resNameBtnSel];
@@ -470,7 +465,7 @@
         UILabel * labelTypeName_5 = [[UILabel alloc] initWithFrame:CGRectMake(btnLeft, 0.5*lineHeight, _chooseCarModelView.width, btnHeight)];
         labelTypeName_5.font = [UIFont systemFontOfSize:10*KScale];
         labelTypeName_5.textColor = [UIColor whiteColor];
-        labelTypeName_5.text = @"智联御动版";
+        labelTypeName_5.text = @"智联旗领四驱版";
         labelTypeName_5.textAlignment = NSTextAlignmentCenter;
         [btnType_5 addSubview:labelTypeName_5];
         UIImage *imageBtnSel_5 =  resourceBundle?[UIImage imageNamed:resNameBtnSel inBundle:resourceBundle compatibleWithTraitCollection:nil]:[UIImage imageNamed:resNameBtnSel];

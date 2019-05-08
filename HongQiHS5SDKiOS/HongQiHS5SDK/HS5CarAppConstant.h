@@ -68,11 +68,11 @@ typedef NS_ENUM(NSUInteger, nMode) {
 };
 
 //车型
-#define typeManualComfortable       (@"HS5_1")//低配两驱
-#define typeManualLuxury            (@"HS5_2")//中配两驱
-#define typeManualHonorable         (@"HS5_3")//中配四驱
-#define typeAutomaticComfortable    (@"HS5_4")//高配两驱
-#define typeAutomaticLuxury         (@"HS5_5")//高配四驱
+#define typeManualComfortable       (@"HS5_1")//智联旗悦版
+#define typeManualLuxury            (@"HS5_2")//智联旗享版
+#define typeManualHonorable         (@"HS5_3")//智联旗享四驱版
+#define typeAutomaticComfortable    (@"HS5_4")//智联旗领版
+#define typeAutomaticLuxury         (@"HS5_5")//智联旗领四驱版
 #define typeAutomaticHonorable      (@"C217_6")//自动尊贵
 #define typeAutomaticUltimate       (@"C217_7")//自动旗舰
 
