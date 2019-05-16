@@ -264,7 +264,7 @@
     NSString *sCarType = @"1"; //[NSString stringWithFormat:@"%d", [num intValue]%100000];
 
     //Get请求
-    NSString *url = [NSString stringWithFormat:@"www.haoweisys.com/hongqih5_admin/index.php/home/index/get_new_version/car_type/%@",sCarType];
+    NSString *url = [NSString stringWithFormat:@"http://www.e-guides.faw.cn/hongqih5_admin/index.php/home/index/get_new_version/car_type/%@",sCarType];
     
     [manager GET:url parameters:nil  success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         //请求成功，解析数据
