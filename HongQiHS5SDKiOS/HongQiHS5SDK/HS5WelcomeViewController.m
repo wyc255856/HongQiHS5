@@ -83,6 +83,9 @@
     return self;
 }
 
+- (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation {
+        return UIInterfaceOrientationLandscapeRight;
+}
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Woverriding-method-mismatch"
 #pragma clang diagnostic ignored "-Wmismatched-return-types"
